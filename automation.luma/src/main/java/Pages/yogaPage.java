@@ -36,6 +36,7 @@ public class yogaPage {
 	
 	By sizeM = By.xpath("//*[@id=\"option-label-size-143-item-168\"]");
 	By sizeL = By.xpath("//*[@id=\"option-label-size-143-item-169\"]");
+	
 	By sizeXL = By.xpath("//*[@id=\"option-label-size-143-item-170\"]");
     By clrBlack = By.xpath("//*[@id=\"option-label-color-93-item-49\"]");
     By clrBlue = By.xpath("//*[@id=\"option-label-color-93-item-50\"]");
@@ -106,7 +107,7 @@ public class yogaPage {
     {
     	WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20));
     	
-    	WebElement size = driver.findElement(sizeS);
+    	WebElement size = driver.findElement(sizeL);
     	size.click();
     	WebElement color = driver.findElement(clrBlue);
     	color.click();
