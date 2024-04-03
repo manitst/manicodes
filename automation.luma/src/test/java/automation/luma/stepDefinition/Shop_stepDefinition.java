@@ -41,21 +41,23 @@ public class Shop_stepDefinition {
 	    
 	}
 	@When("I proceed to checkout")
-	public void i_proceed_to_checkout() {
+	public void i_proceed_to_checkout()  {
 		yogapage.proceedTocheckOut();
 	    
 	}
 	@Then("I am on the checkout page")
-	public void i_am_on_the_checkout_page() {
+	public void i_am_on_the_checkout_page() throws InterruptedException {
 		yogapage.shippingAddress();
 
 	}
 	@Then("I can successfully complete the purchase")
-	public void i_can_successfully_complete_the_purchase() {
+	public void i_can_successfully_complete_the_purchase() throws InterruptedException {
+		yogapage.placeOrder();
 	
 	}
-	@Then("I receive a confirmation order")
-	public void i_receive_a_confirmation_order() {
+	@Then("I receive a confirmation message")
+	public void i_receive_a_confirmation_message() {
+	   yogapage.orderConfirmation();
 	   
 	}
 

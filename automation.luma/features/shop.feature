@@ -14,6 +14,6 @@ Then I add  quantities of the product to the cart
 When I proceed to checkout
 Then I am on the checkout page
 And I can successfully complete the purchase
-Then I receive a confirmation order
+Then I receive a confirmation message
 
  
