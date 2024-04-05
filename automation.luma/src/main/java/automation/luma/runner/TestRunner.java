@@ -14,7 +14,7 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		tags = "@TC1",
+		tags = "@TC2",
 		features ="features", 
 		glue = "automation.luma.stepDefinition", 
 		plugin = {"pretty","junit:target/cucumber-reports/cucumber.xml",
